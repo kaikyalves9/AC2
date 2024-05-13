@@ -15,24 +15,24 @@ public class Aula10_AC2 {
        int notas = 0;
        String nome = null, condicao;
 
-       System.out.print("Digite a quantidade de alunos: "); // Insere quantos alunos você deseja calcular
+       System.out.print("Digite a quantidade de alunos: "); 
        alunos = scn.nextInt();
 
 
        for(int i = 1; i <= alunos; i++ ){  // Inicia a repetição dos códigos abaixo
-           System.out.print("Digite o nome do aluno: "); // Insere o nome do aluno
+           System.out.print("Digite o nome do aluno: "); 
            nome = scn.next();
-           System.out.print("Digite a quantidade de notas: "); // Insere quantas notas você deseja 
+           System.out.print("Digite a quantidade de notas: "); 
            notas = scn.nextInt();
 
        int reinserir = 0;
 	do {
            for(int h = 1; h <= notas; h++ ){
 		do {
-                    System.out.print("Digite a nota " + h + ": "); // Insere a nota que obteve
+                    System.out.print("Digite a nota " + h + ": "); 
                     notafinal = scn.nextDouble();
               } while (notafinal < 0.0 || notafinal > 10.0);
-               System.out.print("Digite o peso (em porcentagem) da nota " + h + ": "); // Insere o peso da nota
+               System.out.print("Digite o peso (em porcentagem) da nota " + h + ": "); // Insere o peso da nota em porcentagem
                peso = scn.nextDouble();
                media += notafinal * (peso/100); // Calcula a média 
              }
